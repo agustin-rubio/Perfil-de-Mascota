@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%; /* ???? */
+}
+
+main {
+    display: flex;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+main .container {
+    border: 2px solid white;
+    background-color: burlywood;
+    border-radius: 40px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 70%;
+    width: 90%;
+    margin: 10% auto 0 auto;
+    display: flex;
+}
+
+.container .profile {
+    position: relative;
+    top: -95px;
+    left: 60px;
+    height: 610px;
+    width: 500px;
+    background-color:brown;
+}
+
+.profile .name {
+    background-color: deeppink;
+    position: relative;
+    top: 3%;
+    margin: auto;
+    color: blanchedalmond;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    padding: 11px;
+    font-size: 24px;
+    font-family: 'Cascadia Code';
+    z-index: 100;
+}
+
+.container .info div {
+    display: flex;
+    background-color: gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-size: 18px;
+    width: 700px;
+    margin: 20px 0 0 100px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .info div:nth-child(2) , div:nth-child(1) {
+    padding: 20px 15px;
+}
+
+.info div:nth-child(2) {
+    height: 400px;
+}
+
+main .container div.characteristics {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    justify-content: space-around;
+}
+
+.container .characteristics div {
+    width: 145px;
+    height: 135px;
+    margin: 12px 0;
+    padding: 8px 15px !important;
+    justify-content: center !important;
+    font-weight: 600;
+    box-shadow: 1px 1px 8px black;
+}
+
+img {
+    display: flex;
+    position: absolute;
+    width:120px;
+    height: auto;
+    margin: 26px 0 0 0;
+}
+
+.food img {
+    width: 135px;
+}
+
+.size img {
+    margin: 20px 0 0 0;
+    width: 125px;
+}
+
+.colors::after {
+    position: absolute;
+    content: '';
+    background-color: rgb(188, 158, 37);
+    width: 110px;
+    height: 28px;
+    margin: 30px 0 0 0;
+    left: 83.5%;
+}
+
+.colors::before {
+    position: absolute;
+    content: '';
+    background-color: rgb(0, 0, 0);
+    width: 110px;
+    height: 30px;
+    margin: 56px 0 0 0;
+    left: 83.5%;
+    box-shadow: 0px 25px 0px 0px white;
+}
+
+.hoverimg1 , .hoverimg2 , .hoverimg3 {
+    display: none;
+    transition: 2s;
+}
+
+.morph:hover .hoverimg1 {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    /* height: 610px; */
+    width: 500px;
+}
+
+img {
+    transition: aparicion .5s ease-in-out;
+}
+
+@keyframes aparicion {
+    0% {
+            opacity: 0%;
+    }
+    100% {
+            opaciity: 100%;
+    }
+}
+
+/* ??????? */
