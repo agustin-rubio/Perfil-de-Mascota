@@ -26,10 +26,10 @@ main .container {
 
 .container .profile {
     position: relative;
-    top: -95px;
-    left: 60px;
-    height: 610px;
-    width: 500px;
+    top: -13%;
+    left: 4%;
+    height: 110%;
+    width:150%;
     background-color:brown;
 }
 
@@ -39,10 +39,10 @@ main .container {
     top: 3%;
     margin: auto;
     color: blanchedalmond;
-    width: 350px;
-    height: 50px;
+    width: 70%;
+    height: 8%;
     text-align: center;
-    padding: 11px;
+    padding: 2%;
     font-size: 24px;
     font-family: 'Cascadia Code';
     z-index: 100;
@@ -53,7 +53,7 @@ main .container {
     background-color: gray;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
     font-size: 18px;
-    width: 700px;
+    width: 85%;
     margin: 20px 0 0 100px;
 }
 
@@ -63,11 +63,12 @@ main .container {
 }
 
 .container .info div:nth-child(2) , div:nth-child(1) {
-    padding: 20px 15px;
+    padding: 1%;
+    height: 75%;
 }
 
 .info div:nth-child(2) {
-    height: 400px;
+    height: 30%;
 }
 
 main .container div.characteristics {
@@ -78,9 +79,9 @@ main .container div.characteristics {
 }
 
 .container .characteristics div {
-    width: 145px;
-    height: 135px;
-    margin: 12px 0;
+    width: 22%;
+    height: 75%;
+    margin: 1% 0;
     padding: 8px 15px !important;
     justify-content: center !important;
     font-weight: 600;
@@ -90,44 +91,45 @@ main .container div.characteristics {
 img {
     display: flex;
     position: absolute;
-    width:120px;
+    width: 9%;
     height: auto;
     margin: 26px 0 0 0;
 }
 
 .food img {
-    width: 135px;
+    width: 9.5%;
 }
 
 .size img {
-    margin: 20px 0 0 0;
-    width: 125px;
+    margin: 1.2% 0 0 0;
+    width: 9.5%;
 }
 
 .colors::after {
     position: absolute;
     content: '';
     background-color: rgb(188, 158, 37);
-    width: 110px;
-    height: 28px;
-    margin: 30px 0 0 0;
-    left: 83.5%;
+    width: 8%;
+    height: 3.5%;
+    margin: 2% 0 0 0;
+    left: 82.7%;
 }
 
 .colors::before {
     position: absolute;
     content: '';
     background-color: rgb(0, 0, 0);
-    width: 110px;
-    height: 30px;
-    margin: 56px 0 0 0;
-    left: 83.5%;
+    width: 8%;
+    height: 3.5%;
+    margin: 3.8% 0 0 0;
+    left: 82.7%;
     box-shadow: 0px 25px 0px 0px white;
 }
 
-.hoverimg1 , .hoverimg2 , .hoverimg3 {
+.hoverimg1 {
     display: none;
-    transition: 2s;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .morph:hover .hoverimg1 {
@@ -136,19 +138,23 @@ img {
     top: 25%;
     left: 10%;
     /* height: 610px; */
-    width: 500px;
+    width: 35%;
+    opacity: 1;
+    animation: none;
 }
 
-img {
-    transition: aparicion .5s ease-in-out;
+.morph .hoverimg1 {
+    animation: aparicion 2s ease-in-out;
 }
 
+/* cfgchcghfhghjghjhh */
 @keyframes aparicion {
     0% {
-            opacity: 0%;
+            opacity: 1;
     }
+
     100% {
-            opaciity: 100%;
+            opacity: 0;
     }
 }
 
