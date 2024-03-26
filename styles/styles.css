@@ -126,9 +126,10 @@ img {
     box-shadow: 0px 25px 0px 0px white;
 }
 
-.hoverimg1 , .hoverimg2 , .hoverimg3 {
+.hoverimg1 {
     display: none;
-    transition: 2s;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .morph:hover .hoverimg1 {
@@ -138,18 +139,22 @@ img {
     left: 10%;
     /* height: 610px; */
     width: 35%;
-    transition: aparicion 1s ease-in-out;
+    opacity: 1;
+    animation: none;
 }
 
+.morph .hoverimg1 {
+    animation: aparicion 2s ease-in-out;
+}
+
+/* cfgchcghfhghjghjhh */
 @keyframes aparicion {
     0% {
-            opacity: 1%;
+            opacity: 1;
     }
-    50% {
-            opacity: 20%;
-    }
+
     100% {
-            opaciity: 100%;
+            opacity: 0;
     }
 }
 
